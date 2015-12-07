@@ -1,5 +1,4 @@
 # NUMBERS
-
 # create function that returns True if even
 
 
@@ -26,11 +25,13 @@ def digits_sum(x):
 
 # return factorial
 
+
 def factorial(x):
     total = 1
     for i in range(1, x + 1):
         total *= i
     return total
+
 
 # return true if prime number
 
@@ -46,6 +47,8 @@ def is_prime(x):
 
 # STRINGS
 # reverse a word without using reverse
+
+
 def reverse(word):
     output = ''
     for char in word:
@@ -71,7 +74,9 @@ def anti_vowel(word):
     return output
 
 
-# get scabble score for given word using dictionary. Forget about double or triple scores
+# get scrabble score for given word using dictionary. Forget about double or triple scores
+
+
 scrabble_score = {'a': 1, 'c': 3, 'b': 3, 'e': 1, 'd': 2, 'g': 2,
                   'f': 4, 'i': 1, 'h': 4, 'k': 5, 'j': 8, 'm': 3,
                   'l': 1, 'o': 1, 'n': 1, 'q': 10, 'p': 3, 's': 1,
@@ -89,15 +94,19 @@ def scrabble(word):
 def scrabble2(word):
     return sum(scrabble_score[letter] for letter in word.lower())
 
+
 # censor the first string with the 2nd string. censor with stars
 
 
 def censor(words, censor_word):
     return words.replace(censor_word, '*' * len(censor_word))
 
+
 # LISTS
-# count occurence of an item in a list
-def occurence(sequence, item):
+# count occurrence of an item in a list
+
+
+def occurrence(sequence, item):
     count = 0
     for s in sequence:
         if s == item:
@@ -106,6 +115,8 @@ def occurence(sequence, item):
 
 
 # take a list of numbers and remove odd numbers
+
+
 def remove_odd(sequence):
     out = []
     for item in sequence:
@@ -115,11 +126,16 @@ def remove_odd(sequence):
 
 
 # take list of numbers and return product
+
+
 def product(sequence):
     total = 1
     for item in sequence:
         total *= item
     return total
+
+
+# remove duplicates from sequence
 
 
 def remove_duplicates(sequence):
