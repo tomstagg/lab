@@ -1,2 +1,2 @@
 # lab
-my lab to test and learn
+my lab
